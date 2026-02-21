@@ -1,0 +1,19 @@
+services:
+  web1:
+    image: nginx
+    ports:
+      - 81:80/tcp
+
+  web2:
+    image: httpd
+    ports:
+      - 82:80/tcp
+
+  web3:
+    image: vishumana/dockerproject:beach
+    ports:
+      - 83:80/tcp
+
+  db1:
+    image: redis
+	
